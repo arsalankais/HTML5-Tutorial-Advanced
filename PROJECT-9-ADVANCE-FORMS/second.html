@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project9:Advaned Forms in HTML</title>
+</head>
+
+<body>
+
+
+    <h1>IIT JEE Registration Form</h1>
+    <form action="./form">
+
+        <fieldset>
+            <legend>User Info</legend>
+            <!-- Full Name -->
+            <label for="uname">Full Name</label>
+            <input type="text" name="uname" id="uname" placeholder="Enter Your Full Name" required>
+            <br><br>
+
+
+            <!-- Email -->
+            <label for="uemail">Email:</label>
+            <input type="email" name="uemail" id="uemail" placeholder="Enter Your Email" required>
+            <br><br>
+
+
+            <!-- Phone Number -->
+            <label for="uphone">Phone:</label>
+            <input type="tel" name="uphone" id="uphone" placeholder="Enter Your Phone Number" required>
+            <br><br>
+
+
+            <!-- Password -->
+            <label for="upass">Password</label>
+            <input type="password" name="upass" id="upass" placeholder="Enter Your Phone Password" required>
+            <br><br>
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>User Other Info</legend>
+            <!-- Gender -->
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="Other">
+            <label for="other">Other</label>
+            <br><br>
+
+
+
+            <!-- Birth -->
+            <label for="ubirth">Date of Birth:</label>
+            <input type="date" name="ubirth" id="ubirth" required min="2001-01-01" max="2005-12-31">
+            <br><br>
+
+
+            <!-- School Name  -->
+            <label for="uschool">School Name</label>
+            <input type="text" name="uschool" id="uschool" placeholder="Enter Your School Name" required>
+            <br><br>
+
+            <!--  School Board -->
+            <label for="uboard">Board:</label>
+            <select name="uboard" id="uboard">
+                <option value="" disabled selected>Select Your Board</option>
+                <option value="State">State</option>
+                <option value="CBSE">CBSE</option>
+                <option value="ICSE">ICSE</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <br><br>
+
+
+
+            <!-- Year Of Passing  -->
+            <label for="upassing">Year of Passing:</label>
+            <input type="number" name="upassing" id="upassing" required min="2023" max="2025">
+            <br><br>
+
+
+            <!-- Exam Center  -->
+            <label for="ucenter">Exam-Center:</label>
+            <select name="ucenter" id="ucenter">
+
+                <option value="" disabled selected>Select Center</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bangalore">Bangalore</option>
+
+
+            </select>
+
+        </fieldset>
+        <br>
+
+
+        <!-- Button  -->
+        <button>Register</button>
+    </form>
+</body>
+
+</html>
